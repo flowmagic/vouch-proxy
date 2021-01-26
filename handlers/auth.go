@@ -171,3 +171,8 @@ func verifyUser(u interface{}) (bool, error) {
 func getUserInfo(r *http.Request, user *structs.User, customClaims *structs.CustomClaims, ptokens *structs.PTokens, opts ...oauth2.AuthCodeOption) error {
 	return provider.GetUserInfo(r, user, customClaims, ptokens, opts...)
 }
+
+func TokenHandler(w http.ResponseWriter, r *http.Request) {
+	responses.Error400(w, r, fmt.Errorf("/auth Error while retreiving user info after successful login at the OAuth provider: %w", "err"))
+	return
+}

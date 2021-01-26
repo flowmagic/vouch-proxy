@@ -150,6 +150,9 @@ func main() {
 	healthH := http.HandlerFunc(handlers.HealthcheckHandler)
 	muxR.HandleFunc("/healthcheck", timelog.TimeLog(healthH))
 
+	tokenH := http.HandlerFunc(handlers.TokenHandler)
+	muxR.HandleFunc("/token", timelog.TimeLog(tokenH))
+
 	// setup static
 	sPath, err := filepath.Abs(cfg.RootDir + staticDir)
 	if fastlog.Core().Enabled(zap.DebugLevel) {
