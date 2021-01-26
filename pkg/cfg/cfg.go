@@ -92,12 +92,12 @@ type branding struct {
 	UCName   string // UPPER CASE VOUCH
 	CcName   string // camelCase Vouch
 	FullName string // Vouch Proxy
-	URL      string // https://github.com/vouch/vouch-proxy
+	URL      string // https://github.com/flowmagic/vouch-proxy
 }
 
 var (
 	// Branding that's our name
-	Branding = branding{"vouch", "VOUCH", "Vouch", "Vouch Proxy", "https://github.com/vouch/vouch-proxy"}
+	Branding = branding{"vouch", "VOUCH", "Vouch", "Vouch Proxy", "https://github.com/flowmagic/vouch-proxy"}
 
 	// RootDir is where Vouch Proxy looks for ./config/config.yml, ./data, ./static and ./templates
 	RootDir string
@@ -453,7 +453,7 @@ func claimToHeader(claim string) (string, error) {
 
 	// The field-name must be composed of printable ASCII characters (i.e., characters)
 	// that have values between 33. and 126., decimal, except colon).
-	// https://github.com/vouch/vouch-proxy/issues/183#issuecomment-564427548
+	// https://github.com/flowmagic/vouch-proxy/issues/183#issuecomment-564427548
 	// get the rune (char) for each claim character
 	for _, r := range claim {
 		// log.Debugf("claimToHeader rune %c - %d", r, r)
@@ -473,7 +473,7 @@ func claimToHeader(claim string) (string, error) {
 }
 
 // fix the claims headers
-// https://github.com/vouch/vouch-proxy/issues/183
+// https://github.com/flowmagic/vouch-proxy/issues/183
 
 func cleanClaimsHeaders() error {
 	cleanedHeaders := make(map[string]string)

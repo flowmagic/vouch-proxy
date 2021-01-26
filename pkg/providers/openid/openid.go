@@ -16,9 +16,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/providers/common"
-	"github.com/vouch/vouch-proxy/pkg/structs"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/providers/common"
+	"github.com/flowmagic/vouch-proxy/pkg/structs"
 	"go.uber.org/zap"
 )
 

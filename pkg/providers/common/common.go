@@ -18,8 +18,8 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/oauth2"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/structs"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/structs"
 )
 
 var log *zap.SugaredLogger

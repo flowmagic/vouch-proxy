@@ -14,12 +14,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/cookie"
-	"github.com/vouch/vouch-proxy/pkg/domains"
-	"github.com/vouch/vouch-proxy/pkg/jwtmanager"
-	"github.com/vouch/vouch-proxy/pkg/responses"
-	"github.com/vouch/vouch-proxy/pkg/structs"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cookie"
+	"github.com/flowmagic/vouch-proxy/pkg/domains"
+	"github.com/flowmagic/vouch-proxy/pkg/jwtmanager"
+	"github.com/flowmagic/vouch-proxy/pkg/responses"
+	"github.com/flowmagic/vouch-proxy/pkg/structs"
 
 	"golang.org/x/oauth2"
 )

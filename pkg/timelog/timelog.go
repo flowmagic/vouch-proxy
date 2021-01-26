@@ -16,8 +16,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/vouch/vouch-proxy/pkg/capturewriter"
-	"github.com/vouch/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/capturewriter"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
 	"go.uber.org/zap"
 )
 

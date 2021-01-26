@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"testing"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
 )
 
 func init() {

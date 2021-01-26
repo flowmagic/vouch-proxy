@@ -16,8 +16,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/cookie"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cookie"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 )

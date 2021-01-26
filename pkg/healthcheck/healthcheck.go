@@ -17,7 +17,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
 	"go.uber.org/zap"
 )
 

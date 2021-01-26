@@ -24,9 +24,9 @@ import (
 	jwt "github.com/dgrijalva/jwt-go"
 	"go.uber.org/zap"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/cookie"
-	"github.com/vouch/vouch-proxy/pkg/structs"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cookie"
+	"github.com/flowmagic/vouch-proxy/pkg/structs"
 )
 
 // const numSites = 2
@@ -86,7 +86,7 @@ func CreateUserTokenString(u structs.User, customClaims structs.CustomClaims, pt
 		StandardClaims,
 	}
 
-	// https://github.com/vouch/vouch-proxy/issues/287
+	// https://github.com/flowmagic/vouch-proxy/issues/287
 	if cfg.Cfg.Headers.AccessToken == "" {
 		claims.PAccessToken = ""
 	}

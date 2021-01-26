@@ -21,14 +21,14 @@ import (
 	"github.com/gorilla/sessions"
 	cv "github.com/nirasan/go-oauth-pkce-code-verifier"
 	"github.com/theckman/go-securerandom"
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/cookie"
-	"github.com/vouch/vouch-proxy/pkg/domains"
-	"github.com/vouch/vouch-proxy/pkg/responses"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cookie"
+	"github.com/flowmagic/vouch-proxy/pkg/domains"
+	"github.com/flowmagic/vouch-proxy/pkg/responses"
 	"golang.org/x/oauth2"
 )
 
-// see https://github.com/vouch/vouch-proxy/issues/282
+// see https://github.com/flowmagic/vouch-proxy/issues/282
 var errTooManyRedirects = errors.New("Too many unsuccessful authorization attempts for the requested URL")
 
 const failCountLimit = 6
@@ -125,7 +125,7 @@ var (
 // The algorithm is as follows:
 // * All login params starting with vouch- or x-vouch- (case insensitively) are treated as true login params
 // * The "error" login param (case sensitively) is treated as true login param
-// * The "rd" login param (case sensitively) added by nginx ingress is treated as true login param https://github.com/vouch/vouch-proxy/issues/289
+// * The "rd" login param (case sensitively) added by nginx ingress is treated as true login param https://github.com/flowmagic/vouch-proxy/issues/289
 // * All other login params are treated as non-login params
 // * All non-login params between the url param and the first true login param are folded into the url param
 // * All remaining non-login params are considered stray non-login params

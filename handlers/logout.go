@@ -15,10 +15,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/cookie"
-	"github.com/vouch/vouch-proxy/pkg/jwtmanager"
-	"github.com/vouch/vouch-proxy/pkg/responses"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/cookie"
+	"github.com/flowmagic/vouch-proxy/pkg/jwtmanager"
+	"github.com/flowmagic/vouch-proxy/pkg/responses"
 )
 
 var errUnauthRedirURL = fmt.Errorf("/logout The requested url is not present in `%s.post_logout_redirect_uris`", cfg.Branding.LCName)

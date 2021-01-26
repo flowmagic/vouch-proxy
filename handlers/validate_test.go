@@ -21,9 +21,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	vegeta "github.com/tsenart/vegeta/lib"
 
-	"github.com/vouch/vouch-proxy/pkg/cfg"
-	"github.com/vouch/vouch-proxy/pkg/jwtmanager"
-	"github.com/vouch/vouch-proxy/pkg/structs"
+	"github.com/flowmagic/vouch-proxy/pkg/cfg"
+	"github.com/flowmagic/vouch-proxy/pkg/jwtmanager"
+	"github.com/flowmagic/vouch-proxy/pkg/structs"
 )
 
 func BenchmarkValidateRequestHandler(b *testing.B) {
@@ -257,7 +257,7 @@ func TestJWTCacheHandler(t *testing.T) {
 				req.AddCookie(tt.cookie)
 			}
 
-			// https://github.com/vouch/vouch-proxy/issues/278
+			// https://github.com/flowmagic/vouch-proxy/issues/278
 			if tt.bearerJWT != "" {
 				req.Header.Add("Authorization", "Bearer "+tt.bearerJWT)
 			}

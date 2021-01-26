@@ -11,14 +11,14 @@ OR CONDITIONS OF ANY KIND, either express or implied.
 package main
 
 // Vouch Proxy
-// github.com/vouch/vouch-proxy
+// github.com/flowmagic/vouch-proxy
 
 /*
 
 Hello Developer!  Thanks for looking at the code!
 
 Before submitting PRs, please see the README...
-https://github.com/vouch/vouch-proxy#submitting-a-pull-request-for-a-new-feature
+https://github.com/flowmagic/vouch-proxy#submitting-a-pull-request-for-a-new-feature
 
 */
 
@@ -32,6 +32,7 @@ import (
 	"path/filepath"
 	"strconv"
 	"time"
+	"fmt"
 
 	// "net/http/pprof"
 
@@ -113,6 +114,7 @@ func configure() {
 }
 
 func main() {
+	fmt.Println("my msg here")
 	configure()
 	var listen = cfg.Cfg.Listen + ":" + strconv.Itoa(cfg.Cfg.Port)
 	checkTCPPortAvailable(listen)
